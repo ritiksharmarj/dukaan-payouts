@@ -7,3 +7,25 @@
     @apply bg-black-98 font-inter;
   }
 }
+
+@layer utilities {
+  .main-nav__link a.active {
+    @apply bg-navbar-100;
+  }
+
+  .main-nav__link a.active span {
+    @apply opacity-100;
+  }
+
+  .main-nav__link svg {
+    @apply w-5 h-5 opacity-80 transition-all;
+  }
+
+  .main-nav__link a:hover svg {
+    @apply opacity-100;
+  }
+
+  .main-nav__link a.active svg {
+    @apply opacity-100;
+  }
+}

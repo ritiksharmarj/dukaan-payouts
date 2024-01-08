@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 
 export default function AppLayout() {
   return (
-    <div className='grid h-screen grid-cols-[260px_minmax(300px,_1fr)] grid-rows-[auto_minmax(300px,_1fr)]'>
+    <div className='grid h-screen grid-cols-[224px_minmax(300px,_1fr)] grid-rows-[auto_minmax(300px,_1fr)]'>
       <Header />
       <Sidebar />
 
