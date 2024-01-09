@@ -14,7 +14,7 @@ export default function AppLayout() {
         setMobileMenuOpen={setMobileMenuOpen}
       />
 
-      <main className='overflow-y-auto bg-gray-50 p-4 tablet:p-8'>
+      <main className='overflow-y-auto p-4 tablet:p-8'>
         <div className='mx-auto'>
           <Outlet />
         </div>

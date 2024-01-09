@@ -45,10 +45,9 @@ export default function Navbar({ setMobileMenuOpen }) {
 
 function NavItem({ to, icon, label, setMobileMenuOpen }) {
   return (
-    <li className='main-nav__link'>
+    <li className='main-nav__link' onClick={() => setMobileMenuOpen(false)}>
       <NavLink
         to={to}
-        onClick={() => setMobileMenuOpen(false)}
         className='group flex items-center transition-all py-2 px-4 gap-3 rounded hover:bg-navbar-100'
       >
         {icon}
