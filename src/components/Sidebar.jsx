@@ -48,6 +48,7 @@ export default function Sidebar({ mobileMenuOpen, setMobileMenuOpen }) {
         </Link>
       </div>
 
+      {/* Mobile navigation */}
       {mobileMenuOpen && (
         <div className='tablet:hidden fixed h-full w-screen bg-black-30/20 backdrop-blur-sm supports-[backdrop-filter]:bg-black-30/20 z-40 inset-0 overflow-hidden transition-all'>
           <div className='h-full w-[224px] shadow-sm bg-navbar-secondary flex flex-col items-center py-4 px-[10px] gap-4 text-black-100 overflow-y-auto'>
