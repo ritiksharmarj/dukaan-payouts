@@ -1,15 +1,17 @@
 import { NavLink } from 'react-router-dom';
-import { HomeIcon } from '../assets/icons/HomeIcon';
-import { OrdersIcon } from '../assets/icons/OrdersIcon';
-import { ProductsIcon } from '../assets/icons/ProductsIcon';
-import { DeliveryIcon } from '../assets/icons/DeliveryIcon';
-import { MarketingIcon } from '../assets/icons/MarketingIcon';
-import { AnalyticsIcon } from '../assets/icons/AnalyticsIcon';
-import { PayoutsIcon } from '../assets/icons/PayoutsIcon';
-import { DiscountsIcon } from '../assets/icons/DiscountsIcon';
-import { AudienceIcon } from '../assets/icons/AudienceIcon';
-import { AppearanceIcon } from '../assets/icons/AppearanceIcon';
-import { PluginsIcon } from '../assets/icons/PluginsIcon';
+import {
+  AnalyticsIcon,
+  AppearanceIcon,
+  AudienceIcon,
+  DeliveryIcon,
+  DiscountsIcon,
+  HomeIcon,
+  MarketingIcon,
+  OrdersIcon,
+  PayoutsIcon,
+  PluginsIcon,
+  ProductsIcon,
+} from '../assets/icons';
 
 export default function Navbar() {
   const navItems = [
