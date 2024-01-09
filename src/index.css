@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-black-98 font-inter;
+    @apply bg-black-98 font-inter text-black-12;
   }
 }
 
