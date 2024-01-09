@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import {
   FeedbackIcon,
   HelpIcon,
@@ -6,8 +6,17 @@ import {
   SearchIcon,
   SortArrowIcon,
 } from '../assets/icons';
+import { useEffect, useState } from 'react';
 
 export default function Header({ setMobileMenuOpen }) {
+  const [pageName, setPageName] = useState('');
+  const location = useLocation();
+
+  useEffect(() => {
+    const pagePath = location.pathname.split('/');
+    setPageName(pagePath[1] || 'Home');
+  }, [location.pathname]);
+
   return (
     <header className='w-full grid grid-cols-[1fr_auto] tablet:grid-cols-[1fr_minmax(400px,_1fr)_1fr] items-center py-3 px-4 tablet:px-8 gap-4 border-b border-black-85 bg-black-100'>
       <div className='flex items-center gap-2 tablet:gap-4'>
@@ -17,7 +26,9 @@ export default function Header({ setMobileMenuOpen }) {
         >
           <MenuOpenIcon width={24} height={24} />
         </div>
-        <span className='text-black-12 text-xl font-medium'>Payouts</span>
+        <span className='text-black-12 text-xl font-medium capitalize'>
+          {pageName}
+        </span>
         <Link
           to='#'
           className='hidden min-[370px]:flex items-center gap-[6px] text-black-30'
