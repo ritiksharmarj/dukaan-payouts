@@ -8,8 +8,8 @@ export default function AppLayout() {
       <Header />
       <Sidebar />
 
-      <main className='overflow-y-auto bg-gray-50 p-10'>
-        <div className='mx-auto max-w-7xl'>
+      <main className='overflow-y-auto bg-gray-50 p-8'>
+        <div className='mx-auto'>
           <Outlet />
         </div>
       </main>

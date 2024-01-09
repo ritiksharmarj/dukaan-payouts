@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import AppLayout from './components/AppLayout';
 import Home from './pages/Home';
 import Orders from './pages/Orders';
@@ -10,7 +10,8 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<AppLayout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Navigate replace to='/payouts' />} />
+          <Route path='/home' element={<Home />} />
           <Route path='/orders' element={<Orders />} />
           <Route path='/payouts' element={<Payouts />} />
         </Route>

@@ -34,6 +34,9 @@ export default {
         200: 'rgba(53, 60, 83, 1)',
       },
     },
+    boxShadow: {
+      sm: '0px 2px 6px 0px rgba(26, 24, 30, 0.04)',
+    },
   },
   plugins: [],
 };

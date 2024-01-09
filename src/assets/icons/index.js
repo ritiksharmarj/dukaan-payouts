@@ -15,6 +15,7 @@ import { WalletIcon } from './WalletIcon';
 import { SearchIcon } from './SearchIcon';
 import { FeedbackIcon } from './FeedbackIcon';
 import { SortArrowIcon } from './SortArrowIcon';
+import { ChevronRightIcon } from './ChevronRightIcon';
 
 export {
   AnalyticsIcon,
@@ -34,4 +35,5 @@ export {
   SearchIcon,
   FeedbackIcon,
   SortArrowIcon,
+  ChevronRightIcon,
 };

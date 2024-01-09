@@ -1,5 +1,10 @@
 import { Link } from 'react-router-dom';
-import { HelpIcon, SearchIcon } from '../assets/icons';
+import {
+  FeedbackIcon,
+  HelpIcon,
+  SearchIcon,
+  SortArrowIcon,
+} from '../assets/icons';
 
 export default function Header() {
   return (
@@ -23,7 +28,23 @@ export default function Header() {
         />
       </div>
 
-      <div></div>
+      <div className='flex items-center justify-end'>
+        <div className='flex items-center gap-3 text-black-30'>
+          <Link
+            to='#'
+            className='w-10 h-10 flex items-center justify-center bg-black-90 rounded-full'
+          >
+            <FeedbackIcon width={20} height={20} />
+          </Link>
+
+          <Link
+            to='#'
+            className='w-10 h-10 flex items-center justify-center bg-black-90 rounded-full'
+          >
+            <SortArrowIcon width={20} height={20} />
+          </Link>
+        </div>
+      </div>
     </header>
   );
 }

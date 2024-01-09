@@ -23,7 +23,7 @@ export default function Sidebar() {
             </Link>
           </div>
           <Link to='#'>
-            <ChevronDownIcon />
+            <ChevronDownIcon width={20} height={20} />
           </Link>
         </div>
 

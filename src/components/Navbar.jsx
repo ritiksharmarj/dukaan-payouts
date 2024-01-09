@@ -15,7 +15,7 @@ import {
 
 export default function Navbar() {
   const navItems = [
-    { to: '/', icon: <HomeIcon />, label: 'Home' },
+    { to: '/home', icon: <HomeIcon />, label: 'Home' },
     { to: '/orders', icon: <OrdersIcon />, label: 'Orders' },
     { to: '/products', icon: <ProductsIcon />, label: 'Products' },
     { to: '/delivery', icon: <DeliveryIcon />, label: 'Delivery' },
