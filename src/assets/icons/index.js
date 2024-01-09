@@ -16,6 +16,8 @@ import { SearchIcon } from './SearchIcon';
 import { FeedbackIcon } from './FeedbackIcon';
 import { SortArrowIcon } from './SortArrowIcon';
 import { ChevronRightIcon } from './ChevronRightIcon';
+import { SortIcon } from './SortIcon';
+import { DownloadIcon } from './DownloadIcon';
 
 export {
   AnalyticsIcon,
@@ -36,4 +38,6 @@ export {
   FeedbackIcon,
   SortArrowIcon,
   ChevronRightIcon,
+  SortIcon,
+  DownloadIcon,
 };
