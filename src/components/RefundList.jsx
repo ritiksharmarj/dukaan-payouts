@@ -3,22 +3,28 @@ import { refunds } from '../data/data-refunds';
 export default function RefundList() {
   return (
     <div className='relative overflow-x-auto'>
-      <table className='w-full text-sm text-left text-black-30'>
-        <thead className='bg-black-95 rounded'>
+      <table className='min-w-full text-sm text-left text-black-30'>
+        <thead>
           <tr>
-            <th scope='col' className='py-[10px] px-3 font-medium'>
+            <th
+              scope='col'
+              className='py-[10px] px-3 font-medium bg-black-95 rounded-l'
+            >
               Order ID
             </th>
-            <th scope='col' className='py-[10px] px-3 font-medium'>
+            <th scope='col' className='py-[10px] px-3 font-medium bg-black-95'>
               Status
             </th>
-            <th scope='col' className='py-[10px] px-3 font-medium'>
+            <th scope='col' className='py-[10px] px-3 font-medium bg-black-95'>
               Transaction ID
             </th>
-            <th scope='col' className='py-[10px] px-3 font-medium'>
+            <th scope='col' className='py-[10px] px-3 font-medium bg-black-95'>
               Refund date
             </th>
-            <th scope='col' className='py-[10px] px-3 font-medium text-right'>
+            <th
+              scope='col'
+              className='py-[10px] px-3 font-medium text-right bg-black-95 rounded-r'
+            >
               Order amount
             </th>
           </tr>

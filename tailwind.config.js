@@ -2,10 +2,6 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    screens: {
-      tablet: '960px',
-      desktop: '1248px',
-    },
     fontFamily: {
       inter: ['Inter', 'sans-serif'],
     },
@@ -36,6 +32,12 @@ export default {
     },
     boxShadow: {
       sm: '0px 2px 6px 0px rgba(26, 24, 30, 0.04)',
+    },
+    extend: {
+      screens: {
+        tablet: '960px',
+        desktop: '1248px',
+      },
     },
   },
   plugins: [],

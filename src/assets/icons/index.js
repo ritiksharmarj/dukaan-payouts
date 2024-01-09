@@ -18,6 +18,8 @@ import { SortArrowIcon } from './SortArrowIcon';
 import { ChevronRightIcon } from './ChevronRightIcon';
 import { SortIcon } from './SortIcon';
 import { DownloadIcon } from './DownloadIcon';
+import { MenuOpenIcon } from './MenuOpenIcon';
+import { MenuCloseIcon } from './MenuCloseIcon';
 
 export {
   AnalyticsIcon,
@@ -40,4 +42,6 @@ export {
   ChevronRightIcon,
   SortIcon,
   DownloadIcon,
+  MenuOpenIcon,
+  MenuCloseIcon,
 };

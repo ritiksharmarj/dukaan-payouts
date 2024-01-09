@@ -29,7 +29,7 @@ export default function Payouts() {
         </div>
       </div>
 
-      <div className='grid grid-cols-3 gap-5 items-start'>
+      <div className='grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-5 items-start'>
         <Card
           title='Next Payout'
           price='₹2,312.23'
@@ -52,19 +52,19 @@ export default function Payouts() {
         </div>
 
         <div className='flex flex-col gap-3 p-3 pb-2 rounded-lg bg-black-100 shadow-sm'>
-          <div className='flex items-center justify-between'>
-            <div className='relative text-black-60'>
+          <div className='flex flex-row gap-2 items-center justify-between'>
+            <div className='relative text-black-60 w-full'>
               <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4'>
                 <SearchIcon width={14} height={14} />
               </div>
               <input
                 type='text'
-                className='block w-[248px] text-sm rounded bg-black-100 py-[10px] px-4 pl-[38px] border border-black-85 outline-none'
+                className='block w-full tablet:w-[248px] text-sm rounded bg-black-100 py-2 tablet:py-[10px] px-4 pl-[38px] border border-black-85 outline-none'
                 placeholder='Order ID or transaction ID'
               />
             </div>
 
-            <div className='flex items-center gap-4 relative'>
+            <div className='flex items-center gap-2 tablet:gap-4 relative'>
               <div className='flex items-center gap-[6px] rounded border border-black-85 bg-black-100 py-[6px] px-3 text-black-30 cursor-pointer'>
                 <span>Sort</span>
                 <SortIcon width={16} height={16} />

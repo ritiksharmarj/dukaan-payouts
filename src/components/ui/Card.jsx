@@ -12,7 +12,7 @@ export default function Card({ title, price, orderNumber, nextPayDate }) {
               <HelpIcon width={16} height={16} />
             </div>
             <div className='flex items-center justify-between'>
-              <span className='text-[32px] font-medium leading-[38px]'>
+              <span className='text-2xl tablet:text-[32px] font-medium tablet:leading-[38px]'>
                 {price}
               </span>
               {orderNumber && (
@@ -39,7 +39,7 @@ export default function Card({ title, price, orderNumber, nextPayDate }) {
               <HelpIcon width={16} height={16} />
             </div>
             <div className='flex items-center justify-between'>
-              <span className='text-[32px] font-medium leading-[38px] text-black-12'>
+              <span className='text-2xl tablet:text-[32px] font-medium tablet:leading-[38px] text-black-12'>
                 {price}
               </span>
               {orderNumber && (
