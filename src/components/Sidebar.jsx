@@ -75,7 +75,7 @@ export default function Sidebar({ mobileMenuOpen, setMobileMenuOpen }) {
               </div>
 
               {/* navigation */}
-              <Navbar />
+              <Navbar setMobileMenuOpen={setMobileMenuOpen} />
             </div>
 
             <Link

@@ -13,7 +13,7 @@ import {
   ProductsIcon,
 } from '../assets/icons';
 
-export default function Navbar() {
+export default function Navbar({ setMobileMenuOpen }) {
   const navItems = [
     { to: '/home', icon: <HomeIcon />, label: 'Home' },
     { to: '/orders', icon: <OrdersIcon />, label: 'Orders' },
@@ -32,18 +32,23 @@ export default function Navbar() {
     <nav className='w-full'>
       <ul className='flex flex-col gap-1'>
         {navItems.map((item) => (
-          <NavItem key={item.to} {...item} />
+          <NavItem
+            key={item.to}
+            {...item}
+            setMobileMenuOpen={setMobileMenuOpen}
+          />
         ))}
       </ul>
     </nav>
   );
 }
 
-function NavItem({ to, icon, label }) {
+function NavItem({ to, icon, label, setMobileMenuOpen }) {
   return (
     <li className='main-nav__link'>
       <NavLink
         to={to}
+        onClick={() => setMobileMenuOpen(false)}
         className='group flex items-center transition-all py-2 px-4 gap-3 rounded hover:bg-navbar-100'
       >
         {icon}
